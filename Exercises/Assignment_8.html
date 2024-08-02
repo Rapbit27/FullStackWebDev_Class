@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Eight</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+        a:link, a:visited {
+            background: green;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: white;
+            border: 2px solid green;
+            color: green;
+        }
+        ul {
+            background-color: yellow;
+        }
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+        .md1 p {
+            display: inline;
+        }
+        .md1 span {
+            background-color: yellow;
+            border: 1px solid;
+            padding: 5px;
+            width: 75px;
+            height: 75px;
+        }
+        .d2 span {
+            display: inline-block;
+        }
+        .d3 span {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">This is a link</a>
+    </div>
+
+    <div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coka Cola</li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="./Files/image_2.jpg" alt="" width="100px" height="100px">
+        <h2>This is a heading</h2>
+        <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div><br><br>
+
+    <div class="md1">
+        <h2>The display Property</h2>
+        <div class="d1">
+            <h3>Display: inline</h3>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <span>hello</span>
+            <span>there</span>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+        </div>
+        <div class="d2">
+            <h3>Display: inline-block</h3>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <span>hello</span>
+            <span>there</span>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+        </div>
+        <div class="d3">
+            <h3>Display: block</h3>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <span>hello</span>
+            <span>there</span>
+            <p>This is text. </p>
+            <p>This is text. </p>
+            <p>This is text. </p>
+        </div>
+    </div>
+</body>
+</html>
