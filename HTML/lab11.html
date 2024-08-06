@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Eleven</title>
+    <style>
+        :root {
+            --white: #d3c6c6;
+            --blue: #57a7f792;
+        }
+        body {
+            background-color: var(--white);
+        }
+        @media screen and (max-width: 900px) {
+            body {
+                background-color: skyblue;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+            }
+        }
+
+        /* Vertical nav-bar */
+        /* ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: rgb(235, 233, 233);
+        }
+        li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active {
+            background-color: green;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: gray;
+            color: white;
+        } */
+
+        /* Horizontal nav-bar */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        li {
+            display: inline-block;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .active {
+            background-color: green;
+        }
+        li a:hover:not(.active) {
+            background-color: gray;
+            color: white;
+        }
+
+        div input:not(input[type=submit]) {
+            margin: 5px;
+            padding: 5px;
+            width: 70%;
+            border: 2px solid orange;
+            border-radius: 4px;
+            outline: none;
+        }
+        div input:not(input[type=submit]):focus {
+            border: 2px solid lightskyblue;
+        }
+        .main {
+            margin-top: 50px;
+            padding: 30px;
+            text-align: center;
+            width: 500px;
+            background-color: lightgray;
+        }
+        input[type=submit] {
+            margin-top: 10px;
+            padding: 10px 30px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type=submit]:hover {
+            background-color: rgb(198, 138, 26);
+        }
+
+        .gradient div {
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+        }
+        .d1 {
+            background-image: linear-gradient(red, orange);
+            /* transform: translate(50px, 100px); */
+        }
+        .d2 {
+            background-image: linear-gradient( to right, red, orange, blue);
+            transition: width 2s;
+        }
+        .d2:hover {
+            width: 500px;
+        }
+        .d3 {
+            background-image: linear-gradient(rgba(255, 0, 0,1), rgba(255, 0, 0, 0.1));
+        }
+         
+        @keyframes example {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        .d1 {
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+
+        .h1 {
+            color: white;
+            text-shadow: 1px 1px 1px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+        .h2 {
+            color: coral;
+            text-shadow: -1px 0px 1px black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        div.card {
+            width: 250px;
+            box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.1), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+        div.header {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+        div.container {
+            padding: 10px;
+        }
+
+        .multi_column div {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 1px solid lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float: right;"><a href="#about">About</a></li>
+    </ul> <br>
+
+    <form>
+        <div class="main">
+            <div><input type="text" placeholder="Enter your name."></div>
+            <div><input type="password" placeholder="Enter your password."></div>
+            <div><input type="submit"></div>
+        </div>
+    </form> <br>
+
+    <section class="gradient">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </section> <br>
+
+    <section class="shadow">
+        <h1 class="h1">Text Shadow Effect</h1>
+        <h1 class="h2">Border Shadow Effect</h1>
+    </section> <br>
+
+    <section class="cards">
+        <div class="card">
+            <div class="header">
+                <h1>1</h1>
+            </div>
+            <div class="container">
+                <p>January 1, 2021</p>
+            </div>
+        </div>
+    </section> <br>
+
+    <section class="multi_column">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, magni fuga nobis cum consequatur nemo eum sequi, quidem rem perferendis eaque quos voluptatum nesciunt similique accusamus deleniti adipisci quisquam eos!
+            Voluptatibus velit voluptatem autem dolorum porro esse, magni doloremque animi et quia laudantium quaerat consequuntur natus quidem quibusdam accusantium libero minus aut labore ipsum. Quos eligendi ad quo nostrum reiciendis.
+            Corporis, ratione cupiditate. Similique quis possimus unde iusto earum nisi tempora reiciendis perspiciatis natus sit quo dolor exercitationem dignissimos eius praesentium, dolorum ratione assumenda? Expedita modi dolorum natus recusandae. Corrupti.
+            Maxime sunt rem minus atque dolorem laborum ipsam reiciendis ad iste totam corrupti cupiditate dolore omnis at nulla eaque blanditiis facere, qui quod quisquam hic fuga enim eum alias. Molestiae?
+            Eum nemo obcaecati sequi voluptatibus, temporibus ipsum nam dolores eos sint, vitae nulla eaque quisquam expedita nostrum fugit architecto, excepturi quaerat vero assumenda debitis! Natus aliquam eos nisi repudiandae officia!
+            Iusto atque at itaque nulla voluptates ipsum perspiciatis corrupti harum, error quibusdam distinctio blanditiis fugiat sed omnis recusandae nihil tenetur et deserunt autem aliquam fuga quidem ex. Ullam, eveniet. Minus.
+            Est culpa dolor natus amet quaerat ducimus ipsum recusandae error aperiam ut tenetur, dicta sequi ab corrupti animi qui officiis soluta obcaecati enim, nulla iste explicabo omnis. Sunt, incidunt labore!
+            Modi alias, facere cupiditate excepturi autem tenetur vero, fugit maiores optio nostrum a illo quod corrupti odio quibusdam velit sed sit voluptatum. Quo neque architecto doloremque maxime beatae obcaecati qui.
+            Quo, necessitatibus aspernatur esse voluptates est eveniet perferendis quos consequatur animi soluta illo ratione dicta a ut dolores natus, vero suscipit veniam impedit nisi, explicabo unde. Tempora itaque perferendis officiis.
+            Nesciunt rerum officia voluptates ut! Deleniti veniam nobis maxime molestias, earum corporis soluta ab? Eius sapiente, quidem facilis at quae cum esse reiciendis debitis et ad nam perspiciatis numquam similique?
+            Deserunt est, ipsum officia, enim quis in sequi, inventore provident iure ullam totam esse? Optio quam quidem doloribus perspiciatis, neque dignissimos eum provident officiis repellendus recusandae? Quis repellendus doloremque eligendi.
+            Quidem neque laboriosam quis voluptatem odio perspiciatis iure eius asperiores exercitationem amet expedita earum esse recusandae sit, quae ullam doloremque veritatis, maxime eaque illo distinctio. Architecto ullam recusandae at hic?
+            Repudiandae quod fugiat error maiores, quam aut alias sequi odio veritatis esse praesentium eligendi explicabo dolorem illo, corporis dolorum excepturi, itaque tempore debitis unde! Numquam quam sit porro id at!
+            Necessitatibus similique perferendis quasi nihil, laudantium deleniti? Corrupti, sequi, quibusdam laudantium consequuntur optio officiis, illum dolores ab esse nesciunt vel reprehenderit odit deleniti quis praesentium hic corporis nam cupiditate voluptate.
+            Vitae voluptatum accusantium laboriosam provident quis veniam harum id, ipsa fugit error ad fuga alias ut animi? Facere nemo pariatur voluptates ea aspernatur ratione eum! Eligendi, ea natus! Magni, beatae.
+            Eum, doloremque, impedit saepe reiciendis minus tempore est rerum, natus temporibus quod dolorem ad minima earum fugiat quos amet consectetur quam sequi sint reprehenderit cumque! Accusantium consectetur quasi id nisi?
+            Rem recusandae maiores ab fugiat dicta? Consequatur alias voluptas laboriosam distinctio ratione in inventore, assumenda iusto neque facilis libero. Ipsam, vero quod consectetur deserunt nobis dignissimos ratione aperiam distinctio accusamus.
+            Saepe quo veritatis repellendus aut ratione unde architecto laboriosam sit quam, harum inventore quisquam itaque aliquid quos magnam temporibus, consequuntur culpa cum dicta perferendis. Mollitia sapiente ullam libero corporis. Officia!
+            Vero voluptatem porro distinctio, aliquam consequatur impedit. Suscipit enim laborum et! Sunt dignissimos impedit id cupiditate, molestiae enim molestias magnam provident tempore necessitatibus vero eaque perferendis in. Magni, placeat facere.
+            Possimus, mollitia. Iure sint est optio? Eligendi maxime deserunt sunt nostrum voluptatem architecto eos quia natus fugiat aspernatur dolore reiciendis ipsam quam alias vero, ratione voluptatum corrupti quas esse provident.
+        </div>
+    </section>
+</body>
+</html>

@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div input,
+        select {
+            margin: 5px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        div input[type=submit] {
+            background-color: rgb(19, 222, 19);
+            cursor: pointer;
+        }
+
+        div label {
+            margin: 10px;
+        }
+
+        .main {
+            margin: auto;
+            padding: 30px;
+            width: 50%;
+            max-width: 400px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
+
 <body>
-    <div>Assignment_9</div>
+    <form>
+        <div class="main">
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" placeholder="Your name.."> <br>
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" placeholder="Your last name.."> <br>
+
+            <label for="country">Country:</label><br>
+            <select name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+                <option value="USA">USA</option>
+            </select> <br><br>
+
+            <div><input type="submit"></div>
+        </div>
+    </form> <br>
+
+    <hr>
+    <br><br><br>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
 </body>
+
 </html>
