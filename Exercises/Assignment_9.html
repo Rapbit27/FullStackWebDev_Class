@@ -48,8 +48,9 @@
 
         /* The container <div> - needed to position the dropdown content */
         .dropdown {
-            position: relative;
+            position: absolute;
             display: inline-block;
+            left: 45%;
         }
 
         /* Dropdown Content (Hidden by Default) */
@@ -79,6 +80,7 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        
 
     </style>
 </head>
@@ -107,14 +109,16 @@
     <hr>
     <br><br><br>
 
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+    <p class="button">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
         </div>
-    </div>
+    </p>
 </body>
 
 </html>
