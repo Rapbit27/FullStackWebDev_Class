@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thirteen</title>
+
+    <style>
+        html {
+            background-color: lightgray;
+            font-family: trebuchet, geneva, sans-serif;
+        }
+
+        body {
+            height: 90vh;
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        article,
+        aside,
+        header,
+        footer {
+            padding: 0.5rem;
+        }
+
+        header {
+            background-color: gray;
+            color: lightgray;
+            text-align: center;
+            border-bottom: 1px solid red;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        nav a {
+            flex: auto;
+            text-align: center;
+            background: #CCC;
+            color: black;
+            margin: 0 5PX;
+            padding: 5PX 0;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            outline: 1px solid red;
+            color: red;
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            border-bottom: 0.5rem solid;
+        }
+
+        article {
+            flex: 80%;
+        }
+
+        aside {
+            background-color: white;
+            flex: 20%;
+        }
+
+        img {
+            float: left;
+            margin: 5px;
+            width: 50%;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Document Heading</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>This is a heading of the main section</h2>
+            <img src="./Files/image_2.jpg" alt="image">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, voluptates! Velit, qui ad hic
+                voluptatum quia officiis mollitia vero dolores aut, placeat soluta quam inventore sunt ipsam pariatur
+                magnam. Non.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, voluptates! Velit, qui ad hic
+                voluptatum quia officiis mollitia vero dolores aut, placeat soluta quam inventore sunt ipsam pariatur
+                magnam. Non.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, voluptates! Velit, qui ad hic
+                voluptatum quia officiis mollitia vero dolores aut, placeat soluta quam inventore sunt ipsam pariatur
+                magnam. Non.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, voluptates! Velit, qui ad hic
+                voluptatum quia officiis mollitia vero dolores aut, placeat soluta quam inventore sunt ipsam pariatur
+                magnam. Non.</p>
+        </article>
+
+        <aside>
+            This is aside
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copy &copy; right 2024 <a href="#">My site</a></p>
+    </footer>
+</body>
+
+</html>
