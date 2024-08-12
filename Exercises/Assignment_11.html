@@ -12,60 +12,128 @@
             box-sizing: border-box;
         }
 
-        .main {
-            background-image: url(./Files/image_5.jpg);
-            height: 100vh;
-            width: 100vw;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-items: center;
+        html {
+            background: blanchedalmond;
         }
 
+        /* nav-bar section */
         .navbar {
-            width: 90%;
-            padding: 30px;
+            position: absolute;
+            width: 100%;
+            padding: 2% 5%;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
+            /* box-shadow: 0 3px rgb(193, 180, 180); */
+            /* background-color: rgba(183, 182, 182, 0.623); */
+        }
+
+        .navbar div {
+            margin-top: 15px;
+        }
+
+        .logo {
+            font-size: 1.75rem;
         }
 
         .navbar ul li {
             list-style: none;
             display: contents;
+            font-size: 1.25rem;
+
         }
 
         .navbar a {
             text-decoration: none;
             color: white;
-            padding: 15px;
-            font-size: 1.2rem;
+            padding: 10px;
+            margin: 10px 5px;
         }
 
         .navbar a:hover {
             color: black;
-            transition: 0.7s;
+            transition: 0.5s;
+            background-color: rgba(116, 181, 181, 0.323);
+            border-radius: 25px;
         }
 
-        .content {
-            color: white;
-            margin: auto;
+        @media screen and (max-width:720px) {
+            .navbar {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                list-style: none;
+                display: contents;
+            }
+        }
+
+        /* reusable style  */
+        section {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-lg {
+            padding: 10px;
+            margin-bottom: 20px;
+            color: rgb(29, 30, 32);
+            font-size: 1.75rem;
+        }
+
+        .title-sm {
+            padding: 10px;
+            margin-bottom: 15px;
+            color: rgb(29, 30, 32);
+            font-size: 1.25rem;
+        }
+
+        .description {
+            width: 60%;
             text-align: center;
-            align-self: center;
-            justify-self: center;
-            letter-spacing: 1.5px;
         }
 
-        .content h1 {
+        .line {
+            width: 20%;
+            height: 3px;
+            background-color: aqua;
             margin: 30px;
-            font-size: 3rem;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .description {
+                width: 80%;
+            }
+        }
+
+        /* hero section  */
+        .hero {
+            background: url(./Files/exercise_11/hero.jpg) center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 10px 0;
+            font-size: 3.5rem;
             font-weight: 600;
         }
 
-        .content h2 {
-            padding: auto;
-            margin: 30px;
+        .hero h2 {
+            margin: 10px;
             font-size: 2rem;
             font-weight: 500;
         }
@@ -89,21 +157,85 @@
             color: white;
         }
 
+        /* @media screen and (max-width: 720px) {
+            .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        } */
+
+        /* products section  */
+        .product {
+            background: rgb(255, 255, 255);
+        }
+
+        .images-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .column-sm {
+            flex: 40%;
+            max-width: 40%;
+            padding: 10px;
+        }
+
+        .column-lg {
+            flex: 60%;
+            max-width: 60%;
+            padding: 10px;
+        }
+
+        .images-gallery img {
+            max-width: 100%;
+            height: 260px;
+        }
+
         @media screen and (max-width:720px) {
-            .navbar {
+            .images-gallery {
                 width: 90%;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
             }
 
-            .navbar ul li {
-                list-style: none;
-                display: contents;
+            .images-gallery img {
+                max-width: 100%;
+                height: 260px;
             }
         }
+
+        /* features section  */
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 210px;
+            padding: 10px;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:960px) {
+            .card-container {
+                flex-direction: column;
+            }
+        }
+
+        /* contact section  */
+
+
     </style>
 </head>
 
@@ -122,13 +254,61 @@
                 </ul>
             </div>
         </div>
-        <div class="content">
+
+        <section class="hero">
             <h1>Responsive Template Page</h1>
             <h2>Full Stack Training Course</h2>
             <div>
                 <button type="button">DOWNLOAD IT HERE</button>
             </div>
-        </div>
+        </section>
+
+        <section class="product">
+            <h2 class="title-lg">Some Of Our Work</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus rerum recusandae excepturi.
+                Quidem, beatae ad ex eaque, dolorem voluptatem similique ipsum libero vel, tempora sapiente doloremque
+                culpa. Quis, incidunt.</p>
+            <div class="line"></div>
+            <div class="images-gallery">
+                <div class="column-sm">
+                    <img src="./Files/exercise_11/coast.jpg" alt="">
+                </div>
+                <div class="column-lg">
+                    <img src="./Files/exercise_11/island.jpg" alt="">
+                </div>
+                <div class="column-lg">
+                    <img src="./Files/exercise_11/balloon.jpg" alt="">
+                </div>
+                <div class="column-sm">
+                    <img src="./Files/exercise_11/mountain.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <h2 class="title-lg">Features and Services</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus rerum recusandae excepturi.
+                Quidem, beatae ad ex eaque, dolorem voluptatem similique ipsum libero vel, tempora sapiente doloremque
+                culpa. Quis, incidunt.</p>
+            <div class="line"></div>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="title-sm">Photography</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta magnam veritatis inventore a nemo cum corporis? </p>
+                </div>
+                <div class="card">
+                    <h3 class="title-sm">Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta magnam veritatis inventore a nemo cum corporis? </p>
+                </div>
+                <div class="card">
+                    <h3 class="title-sm">Content Editing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta magnam veritatis inventore a nemo cum corporis? </p>
+                </div>
+            </div>
+        </section>
+
+        
     </div>
 </body>
 
