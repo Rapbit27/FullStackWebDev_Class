@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .main {
@@ -23,41 +24,52 @@
         }
 
         .card {
-            display: inline-block;
-            text-align: center;
-            width: 270px;
-            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 210px;
             padding: 10px;
             border-radius: 10px;
             background-color: rgba(203, 209, 214, 0.545);
         }
 
-        .card h2{
+        .card h2 {
             font-size: 1.75rem;
-            letter-spacing: 1px;
-            margin: 0.25rem;
+            letter-spacing: 0.125em;
+            margin-bottom: 0.5rem;
         }
-        
+
         .card h3 {
             font-size: 1.125rem;
         }
 
         .card p {
+            display: flex;
+            align-items: center;
             font-weight: 600;
             margin-top: 5px;
+            font-size: 0.8rem;
         }
 
         .card button {
-            padding: 3px;
-            margin-top: 10px;
+            padding: 5px;
+            margin-top: 15px;
             border-radius: 5px;
             background-color: orangered;
             color: white;
             border: none;
         }
 
+        .card img {
+            display: inline-block;
+            margin-right: 10px;
+            width: 1rem;
+        }
 
-        @media screen and (max-width:840px) {
+
+        @media screen and (max-width:960px) {
             .main {
                 flex-direction: column;
             }
@@ -70,25 +82,25 @@
         <div class="card">
             <h3>Basic</h3>
             <h2>$11.99/month</h2>
-            <p>10GB Storage</p>
-            <p>1 User</p>
-            <p>Support</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">10GB Storage</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">1 User</p>
+            <p><img src="./images/no-preview.png" alt="no-preview">Support</p>
             <button>Sign up</button>
         </div>
         <div class="card">
             <h3>Standard</h3>
             <h2>$19.99/month</h2>
-            <p>50GB Storage</p>
-            <p>5 User</p>
-            <p>Phone & Email Support</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">50GB Storage</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">5 User</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">Phone & Email Support</p>
             <button>Sign up</button>
         </div>
         <div class="card">
             <h3>Premium</h3>
             <h2>$49.99/month</h2>
-            <p>100GB Storage</p>
-            <p>10 User</p>
-            <p>24/7 Support</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">100GB Storage</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">10 User</p>
+            <p><img src="./images/check-mark.png" alt="check-mark">24/7 Support</p>
             <button>Sign up</button>
         </div>
     </div>
