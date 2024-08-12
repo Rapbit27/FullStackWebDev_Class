@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            display: inline-block;
+            text-align: center;
+            width: 270px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(203, 209, 214, 0.545);
+        }
+
+        .card h2{
+            font-size: 1.75rem;
+            letter-spacing: 1px;
+            margin: 0.25rem;
+        }
+        
+        .card h3 {
+            font-size: 1.125rem;
+        }
+
+        .card p {
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .card button {
+            padding: 3px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: orangered;
+            color: white;
+            border: none;
+        }
+
+
+        @media screen and (max-width:840px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <h3>Basic</h3>
+            <h2>$11.99/month</h2>
+            <p>10GB Storage</p>
+            <p>1 User</p>
+            <p>Support</p>
+            <button>Sign up</button>
+        </div>
+        <div class="card">
+            <h3>Standard</h3>
+            <h2>$19.99/month</h2>
+            <p>50GB Storage</p>
+            <p>5 User</p>
+            <p>Phone & Email Support</p>
+            <button>Sign up</button>
+        </div>
+        <div class="card">
+            <h3>Premium</h3>
+            <h2>$49.99/month</h2>
+            <p>100GB Storage</p>
+            <p>10 User</p>
+            <p>24/7 Support</p>
+            <button>Sign up</button>
+        </div>
+    </div>
+</body>
+
+</html>
