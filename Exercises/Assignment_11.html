@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Eleven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-image: url(./Files/image_5.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-items: center;
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 30px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: contents;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+        .navbar a:hover {
+            color: black;
+            transition: 0.7s;
+        }
+
+        .content {
+            color: white;
+            margin: auto;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            letter-spacing: 1.5px;
+        }
+
+        .content h1 {
+            margin: 30px;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .content h2 {
+            padding: auto;
+            margin: 30px;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        button {
+            background: rgb(0, 192, 226);
+            padding: 15px;
+            margin: 20px 5px;
+            text-align: center;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            border: 2px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: rgb(0, 151, 226);
+            transition: 0.5s;
+            color: white;
+        }
+
+        @media screen and (max-width:720px) {
+            .navbar {
+                width: 90%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .navbar ul li {
+                list-style: none;
+                display: contents;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="left">
+                <a href="#" class="logo">Website Logo</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Responsive Template Page</h1>
+            <h2>Full Stack Training Course</h2>
+            <div>
+                <button type="button">DOWNLOAD IT HERE</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
