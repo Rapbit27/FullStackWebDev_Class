@@ -13,7 +13,7 @@
         }
 
         html {
-            background: blanchedalmond;
+            background: rgba(0, 0, 0, 0.73);
         }
 
         /* nav-bar section */
@@ -26,6 +26,7 @@
             justify-content: space-between;
             /* box-shadow: 0 3px rgb(193, 180, 180); */
             /* background-color: rgba(183, 182, 182, 0.623); */
+            z-index: 1;
         }
 
         .navbar div {
@@ -134,8 +135,7 @@
 
         /* hero section  */
         .hero {
-            background: url(./Files/exercise_11/hero.jpg) center no-repeat;
-            background-size: cover;
+            position: relative;
             height: 100vh;
             color: white;
             display: flex;
@@ -145,16 +145,35 @@
             text-align: center;
         }
 
+        .hero::before {
+            content: "";
+            background: url(./Files/exercise_11/hero.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.7;
+
+        }
+
         .hero h1 {
+            position: relative;
             margin: 10px 0;
             font-size: 3.5rem;
             font-weight: 600;
         }
 
         .hero h2 {
+            position: relative;
             margin: 10px;
             font-size: 2rem;
             font-weight: 500;
+        }
+        
+        .hero button {
+            position: relative;
         }
 
         /* @media screen and (max-width: 720px) {
@@ -208,6 +227,10 @@
         }
 
         /* features section  */
+        .feature {
+            background: rgb(228, 228, 228);
+        }
+
         .card-container {
             display: flex;
             flex-direction: row;
