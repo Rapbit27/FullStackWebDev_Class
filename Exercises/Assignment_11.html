@@ -192,8 +192,8 @@
         .images-gallery {
             display: flex;
             flex-wrap: wrap;
-            width: 650px;
-            margin-bottom: 30px;
+            max-width: 650px;
+            margin-bottom: 2rem;
         }
 
         .column-sm {
@@ -298,15 +298,15 @@
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#feature">About</a></li>
+                    <li><a href="#join">Contact Us</a></li>
                 </ul>
             </div>
         </div>
 
-        <section class="hero">
+        <section class="hero" id="home">
             <h1>Responsive Template Page</h1>
             <h2>Full Stack Training Course</h2>
             <div>
@@ -314,7 +314,7 @@
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="product">
             <h2 class="title-lg">Some Of Our Work</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus rerum
                 recusandae excepturi.
@@ -337,7 +337,7 @@
             </div>
         </section>
 
-        <section class="feature">
+        <section class="feature" id="feature">
             <h2 class="title-lg">Features and Services</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus rerum
                 recusandae excepturi.
@@ -364,7 +364,7 @@
             </div>
         </section>
 
-        <section class="join-us">
+        <section class="join-us" id="join">
             <h2 class="title-lg">Join Our Newsletter</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus rerum
                 recusandae excepturi.
@@ -377,6 +377,10 @@
                 <button>Subscribe Now</button>
             </div>
         </section>
+
+        <!-- <section class="return">
+
+        </section> -->
 
         <footer>
             <p>Made by R@pb!t</p>
