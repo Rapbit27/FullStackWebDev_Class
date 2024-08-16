@@ -98,6 +98,10 @@ main button:hover {
     color: rgb(61, 241, 241);
 }
 
+.content {
+    margin-top: 10rem;
+}
+
 @media (min-width: 45rem) {
     .navbar {
         display: flex;
