@@ -102,16 +102,17 @@
         }
 
         button {
-            background: rgb(0, 192, 226);
-            padding: 20px;
-            margin: 20px 5px;
+            background: rgb(0, 154, 226);
+            padding: 1.125rem;
+            margin: 1.25rem 0.5rem;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 0.5rem;
             color: rgb(255, 255, 255);
             border: 2px;
-            font-size: 1rem;
+            font-size: 0.75rem;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 800;
+            min-width: 12rem;
         }
 
         button:hover {
@@ -122,10 +123,8 @@
 
         .line {
             width: 20%;
-            height: 3px;
-            background-color: aqua;
-            margin: 30px;
-            border-radius: 10px;
+            border: 0.125rem solid skyblue;
+            margin: 1.5rem;
         }
 
         @media screen and (max-width: 960px) {
@@ -136,7 +135,7 @@
 
         /* hero section  */
         .hero {
-            background: url(./Files/exercise_11/hero.jpg) center no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Files/exercise_11/hero.jpg) center no-repeat;
             background-size: cover;
             height: 100vh;
             color: white;
@@ -147,7 +146,7 @@
             text-align: center;
         }
 
-        .hero::before {
+        /* .hero::before {
             content: "";
             position: absolute;
             top: 0px;
@@ -155,19 +154,20 @@
             bottom: 0px;
             left: 0px;
             background-color: rgba(0, 0, 0, 0.296);
-        }
+        } */
 
         .hero h1 {
             position: relative;
             margin: 10px 0;
-            font-size: 3.5rem;
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
             font-weight: 600;
         }
 
         .hero h2 {
             position: relative;
             margin: 10px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
 
@@ -259,9 +259,9 @@
 
         input {
             font-size: 1rem;
-            padding: 20px;
-            width: 400px;
-            border-radius: 3px;
+            padding: 1.125rem;
+            min-width: 20rem;
+            border-radius: 0.5rem;
             border: 1px solid lightgray;
         }
 
@@ -273,6 +273,9 @@
         }
 
         @media screen and (max-width:720px) {
+            input {
+                min-width: 275px;
+            }
             .subscribe {
                 flex-direction: column;
             }
@@ -321,7 +324,7 @@
                 recusandae excepturi.
                 Quidem, beatae ad ex eaque, dolorem voluptatem similique ipsum libero vel, tempora sapiente doloremque
                 culpa. Quis, incidunt.</p>
-            <div class="line"></div>
+            <hr class="line">
             <div class="images-gallery">
                 <div class="column-sm">
                     <img src="./Files/exercise_11/coast.jpg" alt="">
@@ -344,7 +347,7 @@
                 recusandae excepturi.
                 Quidem, beatae ad ex eaque, dolorem voluptatem similique ipsum libero vel, tempora sapiente doloremque
                 culpa. Quis, incidunt.</p>
-            <div class="line"></div>
+            <hr class="line">
 
             <div class="card-container">
                 <div class="card">
@@ -371,7 +374,7 @@
                 recusandae excepturi.
                 Quidem, beatae ad ex eaque, dolorem voluptatem similique ipsum libero vel, tempora sapiente doloremque
                 culpa. Quis, incidunt.</p>
-            <div class="line"></div>
+            <hr class="line">
 
             <div class="subscribe">
                 <input type="text" placeholder="Email">
