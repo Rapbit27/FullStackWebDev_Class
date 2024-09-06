@@ -20,7 +20,7 @@ header {
     width: 100vw;
     position: fixed;
     text-align: center;
-    background: rgba(240, 232, 213, 0.789);
+    /* background: rgba(240, 232, 213, 0.789); */
 }
 
 .navbar {
