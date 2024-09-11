@@ -1,0 +1,18 @@
+html {
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+}
+
+.icon img {
+  width: 2rem;
+}
